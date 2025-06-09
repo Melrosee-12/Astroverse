@@ -1,8 +1,8 @@
 body{
-    background-color: rgb(8, 3, 24);
+    background-color: #070317;
 }
 *{
-    border: 1px red solid;
+    border: px red solid;
     margin: 0px;
     box-sizing: border-box;
     font-family:  Calibri;
@@ -18,6 +18,7 @@ body{
 .logo img{
     max-width: 80px;
 }
+
 header{
     display: flex;
     position: sticky;
@@ -25,6 +26,7 @@ header{
     background-color: rgb(8, 3, 24);
     z-index: 9999;
 }
+
 .menu{
     display: flex;
     height: auto;
@@ -56,11 +58,13 @@ header{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .text{
     color: #fff;
     margin-left: 30px;
     font-size: 32px;
 }
+
 .cosmonaunt img{
     position: absolute;
     bottom: 170px;
@@ -68,6 +72,7 @@ header{
     width: 300px;
     transform: rotateZ(15deg);
 }
+
 .bron{
     background: radial-gradient(rgba(246, 255, 0, 1), rgba(0, 255, 234, 1));
     border: 3px rgba(246, 255, 0, 1) solid;
@@ -81,12 +86,115 @@ header{
     transform: rotateZ(15deg);
     box-shadow: black 0px 0px 30px;
 }
+
 .bron:hover{
     background: radial-gradient(rgba(0,255,234,1), rgba(246,255,0,1));
     cursor: pointer;
     text-decoration: underline;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(7, 3, 23, 0.8); /* Тёмный полупрозрачный фон */
+  }
+  
+  .modal-content {
+    background-color: #070317;
+    margin: 10% auto;
+    padding: 25px;
+    border: 1px solid #2d1a5a;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+  }
+  
+  /* Кнопка закрытия */
+  .close {
+    color: #a0a0a0;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .close:hover {
+    color: #ffffff;
+  }
+  
+  /* Стили формы */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #d0d0d0;
+  }
+  
+  .form-group input,
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2d1a5a;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #0f0829;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #4d2ca5;
+    box-shadow: 0 0 0 2px rgba(77, 44, 165, 0.3);
+  }
+  
+  .submit-btn {
+    background-color: #4d2ca5;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #5d3cb5;
+    transform: translateY(-2px);
+  }
+  
+  /* Анимация появления модального окна */
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .modal-content {
+    animation: modalFadeIn 0.3s ease-out;
+  }
 .main h2{
     color: #fff;
     background: linear-gradient(to top, rgb(8,3,24),rgb(27, 27, 79));
@@ -113,4 +221,35 @@ footer{
 .Open-space img{
     border-radius:50%;
     height: 300px;
+}
+
+.Neptune img{
+    border-radius:50%;
+    height: 300px;
+    position: absolute;
+    left: 1100px;
+    top: 600px;
+}
+
+.Marse img{
+    border-radius:50%;
+    height: 300px;
+    position: absolute;
+    left: 50px;
+    top: 1000px;
+}
+
+.Saturne img{
+    border-radius:40%;
+    height: 300px;
+    position: absolute;
+    left: 1100px;
+    top: 1000px;
+}
+
+.luna img{
+    border-radius:50%;
+    height: 300px;
+    position: absolute;
+    left: 550px;
 }
