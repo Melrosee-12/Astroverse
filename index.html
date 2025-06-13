@@ -15,7 +15,7 @@
             <p>ASRTOVERSE</p>
         </div>
         <nav class="menu">
-            <button>ПРАЙС</button>
+            <button><a href="#price">ПРАЙС</a></button>
             <button>МЕНЮ</button>
             <button>КОНТАКТЫ</button>
         </nav>
@@ -35,7 +35,7 @@
         <div class="cosmonaunt">
             <img src="images/Cosmonaut.png" alt="">
         </div>
-        <button id="bookingBtn" class="booking-button bron">БРОНИРОВАТЬ</button>
+        <button id="bookingBtn" class=" bron">БРОНИРОВАТЬ</button>
 <!-- Само модальное окно -->
 <div id="bookingModal" class="modal">
   <div class="modal-content">
@@ -77,59 +77,127 @@
     </form>
   </div>
 </div>
-    </div>
-    <div class="main">
-        <h2>ПРАЙС</h2>
-        <div class="Open-space">
-            <img src="images/Open-space.png" alt="">
-        </div>
-        <div class="Neptune">
-            <img src="images/Neptune.jpg" alt="">
-        </div>
-        <div class="Marse">
-            <img src="images/Marse.jpg" alt="">
-        </div>
-        <div class="Saturne">
-            <img src="images/Saturne.png" alt="">
-        </div>
-        <div class="luna">
-            <img src="images/Luna.jpg" alt="">
-        </div>
-    </div>
+<div class="price" id="price">
+  <h2>ПРАЙС</h2>
+  <main>
+      <div class="d">
+        <div class="center"></div>
+          <section class="Open-space">
+              <img src="images/OS 4.png" alt="">
+              <div class="time-price">
+                  <div class="time-space">
+                      <h3>УТРО</h3>
+                      <h3>НОЧЬ</h3>
+                  </div>
+                  <div class="time-space-2">
+                      <div>300&#8381</div>
+                      <div>500&#8381</div>
+                  </div>
+              </div>
+          </section>
+          <section class="Saturn">
+              <img src="images/SATURN.png" alt="">
+              <div class="time-price">
+                  <div class="time">
+                      <h3>УТРО</h3>
+                      <h3>НОЧЬ</h3>
+                  </div>
+                  <div class="time-2">
+                      <div>350&#8381</div>
+                      <div>550&#8381</div>
+                  </div>
+              </div>
+          </section>
+          <section class="Neptune-Marse">
+              <img src="images/NEPTUN.png" alt="">
+              <div class="time-price">
+                  <div class="time">
+                      <h3>УТРО</h3>
+                      <h3>НОЧЬ</h3>
+                  </div>
+                  <div class="time-2">
+                      <div>400&#8381</div>
+                      <div>600&#8381</div>
+                  </div>
+              </div>
+          </section>
+          <section class="Neptune-Marse">
+              <img src="images/MARS.png" alt="">
+              <div class="time-price">
+                  <div class="time">
+                      <h3>УТРО</h3>
+                      <h3>НОЧЬ</h3>
+                  </div>
+                  <div class="time-2">
+                      <div>300&#8381</div>
+                      <div>500&#8381</div>
+                  </div>
+              </div>
+          </section>
+      </div>
+      
+      <div class="moon">
+      <section class="luna">
+          <img src="images/LUNA.png" alt="">
+          <div class="time-price">
+              <div class="time">
+                  <h3>УТРО</h3>
+                  <h3>НОЧЬ</h3>
+              </div>
+              <div class="time-2">
+                  <div>450&#8381</div>
+                  <div>1000&#8381</div>
+              </div>
+          </div>
+      </section>
+      </div>
+      <div class="button">
+        <button id="bookingBtn-2" class="bron-2">БРОНИРОВАТЬ</button>
+      </div>
+  </main>
+</div>
+<section class="menu-food">
+  
+</section>
     <footer>
         <p>Все права защищены  &#xa9; 2024-2025</p>
     </footer>
     <script>
-const modal = document.getElementById("bookingModal");
-const btn = document.getElementById("bookingBtn");
-const span = document.getElementsByClassName("close")[0];
-const form = document.getElementById("bookingForm");
+    const modal = document.getElementById("bookingModal");
+    const btn = document.getElementById("bookingBtn");
+    const span = document.getElementsByClassName("close")[0];
+    const form = document.getElementById("bookingForm");
+    const btn2 = document.getElementById("bookingBtn-2")
 
-// Открытие модального окна
-btn.onclick = function() {
-  modal.style.display = "block";
-}
+      // Открытие модального окна
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
 
-// Закрытие модального окна
-span.onclick = function() {
-  modal.style.display = "none";
-}
+      btn2.onclick = function() {
+        modal.style.display = "block";
+      }
 
-// Закрытие при клике вне окна
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+      // Закрытие модального окна
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
 
-// Обработка формы
-form.onsubmit = function(e) {
-  e.preventDefault();
-  const arena = document.getElementById('arena').value;
-  alert(`Бронирование на арене "${arena}" отправлено! Мы свяжемся с вами для подтверждения.`);
-  modal.style.display = "none";
-  form.reset();
-}
+      // Закрытие при клике вне окна
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+
+      // Обработка формы
+      form.onsubmit = function(e) {
+        e.preventDefault();
+        const arena = document.getElementById('arena').value;
+        alert(`Бронирование на арене "${arena}" отправлено! Мы свяжемся с вами для подтверждения.`);
+        modal.style.display = "none";
+        form.reset();
+      }
     </script>
 </body>
 </html>

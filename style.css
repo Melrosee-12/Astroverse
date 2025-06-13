@@ -24,7 +24,7 @@ header{
     position: sticky;
     top: 0;
     background-color: rgb(8, 3, 24);
-    z-index: 9999;
+    z-index: 1;
 }
 
 .menu{
@@ -34,6 +34,15 @@ header{
     margin-left: 48%;
 }
 
+.menu a:active,
+.menu a:visited, .menu a:focus{
+  color: #fff;
+  text-decoration: none;
+}
+.menu a:hover{
+  color: #fff;
+  text-decoration: underline;
+}
 .menu button{
     width: 100px;
     height: 45px;
@@ -195,7 +204,7 @@ header{
   .modal-content {
     animation: modalFadeIn 0.3s ease-out;
   }
-.main h2{
+  .price h2{
     color: #fff;
     background: linear-gradient(to top, rgb(8,3,24),rgb(27, 27, 79));
     height: 50px;
@@ -203,53 +212,130 @@ header{
     align-items: center;
     justify-content: center;
     font-size: xx-large;
-}
-.main{
     margin-top: 20px;
+}
+main{
     background-image: url(images/back.png);
     height: 1095px;
 }
-footer{
-    display: flex;
-    color: #fff;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
-    background-color: rgba(27, 27, 79, 0.5);
-}
-
 .Open-space img{
-    border-radius:50%;
-    height: 300px;
+    width: 400px;
+}
+.time-space h3:nth-child(1), .time-space h3:nth-child(2){
+    display: flex;
+    border: 3px #fff solid;
+    color: #fff;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #fff;
 }
 
-.Neptune img{
-    border-radius:50%;
-    height: 300px;
-    position: absolute;
-    left: 1100px;
-    top: 600px;
+.time-space h3:nth-child(2){
+    margin-left: 30px;
 }
 
-.Marse img{
-    border-radius:50%;
-    height: 300px;
-    position: absolute;
-    left: 50px;
-    top: 1000px;
+.time-space, .time-space-2{
+    display: flex;
+    margin: 10px;
+    width: max-content;
+    margin-left: 60px;
 }
 
-.Saturne img{
-    border-radius:40%;
-    height: 300px;
-    position: absolute;
-    left: 1100px;
-    top: 1000px;
+.time-space-2 div:nth-child(1), .time-space-2 div:nth-child(2){
+    display: flex;
+    border: 3px #fff solid;
+    color: #fff;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #fff;
+}
+.time-space-2 div:nth-child(2){
+    margin-left: 30px;
+}
+.Neptune-Marse{
+    margin-left: 30px;
+}
+.Neptune-Marse img{
+   width: 270px; 
+}
+.time h3:nth-child(1), .time h3:nth-child(2){
+    display: flex;
+    border: 3px #fff solid;
+    color: #fff;
+    height: 50px;
+    width: 120px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px #fff;
 }
 
+.time h3:nth-child(2){
+  margin-left: 30px;
+}
+
+.time, .time-2{
+  display: flex;
+  margin: 10px;
+  width: max-content;
+}
+
+.time-2 div:nth-child(1), .time-2 div:nth-child(2){
+  display: flex;
+  border: 3px #fff solid;
+  color: #fff;
+  height: 50px;
+  width: 120px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px #fff;
+}
+.time-2 div:nth-child(2){
+  margin-left: 30px;
+}
+.Saturn img{
+  width: 270px;
+}
 .luna img{
-    border-radius:50%;
-    height: 300px;
-    position: absolute;
-    left: 550px;
+  width: 270px;
+}
+.d{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.moon{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+}
+.button{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+}
+.bron-2{
+  background: radial-gradient(rgba(246, 255, 0, 1), rgba(0, 255, 234, 1));
+  border: 3px rgba(246, 255, 0, 1) solid;
+  border-radius: 20px;
+  width: 140px;
+  height: 50px;
+  font-weight: bold;
+  box-shadow: black 0px 0px 30px;
+
+}
+
+.bron-2:hover{
+  background: radial-gradient(rgba(0,255,234,1), rgba(246,255,0,1));
+  cursor: pointer;
+  text-decoration: underline;
 }
