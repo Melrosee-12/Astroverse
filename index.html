@@ -16,8 +16,8 @@
         </div>
         <nav class="menu">
             <button><a href="#price">ПРАЙС</a></button>
-            <button>МЕНЮ</button>
-            <button>КОНТАКТЫ</button>
+            <button><a href="menu.html">МЕНЮ</a></button>
+            <button><a href="#con">КОНТАКТЫ</a></button>
         </nav>
     </header>
     <div class="section">
@@ -36,47 +36,6 @@
             <img src="images/Cosmonaut.png" alt="">
         </div>
         <button id="bookingBtn" class=" bron">БРОНИРОВАТЬ</button>
-<!-- Само модальное окно -->
-<div id="bookingModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2>Бронирование места</h2>
-    <form id="bookingForm">
-      <div class="form-group">
-        <label for="arena">Выберите арену:</label>
-        <select id="arena" name="arena" required>
-          <option value="">-- Выберите арену --</option>
-          <option value="Open-space">Open-space</option>
-          <option value="Neptune">Neptune</option>
-          <option value="Mars">Mars</option>
-          <option value="Saturn">Saturn</option>
-          <option value="Luna">Luna</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name" required>
-      </div>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-      </div>
-      <div class="form-group">
-        <label for="date">Дата:</label>
-        <input type="date" id="date" name="date" required>
-      </div>
-      <div class="form-group">
-        <label for="time">Время:</label>
-        <input type="time" id="time" name="time" required>
-      </div>
-      <div class="form-group">
-        <label for="guests">Количество гостей:</label>
-        <input type="number" id="guests" name="guests" min="1" required>
-      </div>
-      <button type="submit" class="submit-btn">Подтвердить бронь</button>
-    </form>
-  </div>
-</div>
 <div class="price" id="price">
   <h2>ПРАЙС</h2>
   <main>
@@ -156,9 +115,66 @@
       </div>
   </main>
 </div>
-<section class="menu-food">
-  
-</section>
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Бронирование места</h2>
+    <form id="bookingForm">
+      <div class="form-group">
+        <label for="arena">Выберите арену:</label>
+        <select id="arena" name="arena" required>
+          <option value="">-- Выберите арену --</option>
+          <option value="Open-space">Open-space</option>
+          <option value="Neptune">Neptune</option>
+          <option value="Mars">Mars</option>
+          <option value="Saturn">Saturn</option>
+          <option value="Luna">Luna</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="date">Дата:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Время:</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <div class="form-group">
+        <label for="guests">Количество гостей:</label>
+        <input type="number" id="guests" name="guests" min="1" required>
+      </div>
+      <button type="submit" class="submit-btn">Подтвердить бронь</button>
+    </form>
+  </div>
+</div>
+<h2 id="con">КОНТАКТЫ</h2>
+<div class="contackt">
+<div>
+  <p>Вы можете так же зайти в наш телеграм канал</p>
+  <p>@ASRTOVERSE151</p>
+</div>
+<div>
+  <p>Найти вы нас можете по адресу</p>
+  <p>ул. Максима Горького 151</p>
+</div>
+<div>
+  <p>А еще у нас есть тик ток аккаунт</p>
+  <P>@astrarnd0</P>
+</div>
+</div>
+<div class="map">
+  <div>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A0d109012d29eb803901334893d08848a426efa42a3a31cf4950bb8bd22f8911b&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+</div>
     <footer>
         <p>Все права защищены  &#xa9; 2024-2025</p>
     </footer>

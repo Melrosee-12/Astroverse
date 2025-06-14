@@ -8,11 +8,11 @@
         *{
             margin: 0;
             box-sizing: border-box;
-            border: 1px red solid;
+            border: px red solid;
         }
         .price h2{
             color: #fff;
-            background: linear-gradient(to top, rgb(8,3,24),rgb(27, 27, 79));
+            background: linear-gradient(to top, #080318,rgb(27, 27, 79));
             height: 50px;
             display: flex;
             align-items: center;
@@ -136,6 +136,37 @@
     cursor: pointer;
     text-decoration: underline;
 }
+
+.menu-food{
+    background-color: #080318;
+    height: max-content;
+}
+
+.menu-header{
+    background-color: #200e5b;
+    color: rgb(223, 223, 223);
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.snacks{
+    width: 400px;
+    background-color: #000000;
+    color: #fff;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius:20px;
+    line-height: 25px;
+    display: flex;
+}
+
+.snacks h3{
+    color: red;
+    padding-bottom: 10px;
+}
     </style>
 </head>
 <body>
@@ -214,5 +245,39 @@
             <button id="bookingBtn-2" class="bron-2">БРОНИРОВАТЬ</button>
         </main>
     </div>
+    <section class="menu-food">
+        <div class="menu-header">
+            <h3>МЕНЮ</h3>
+        </div>
+        <h3>ЗАКУСКИ</h3>
+        <div class="snacks">
+            <div>
+                <p>ТАР ТАР ИЗ ГОВЯДИНЫ</p>
+                <p>СЫРНОЕ АССОРТИ</p>
+                <p>АССОРТИ КОПЧЕНИЙ</p>
+                <p>ГРЕНКИ БОРОДИНСКИЕ</p>
+                <p>ГРЕНКИ ПШЕНИЧНЫЕ</p>
+                <p>АРАХИС КОПЧЕНЫЙ</p>
+                <p>АРАХИС СОЛЁНЫЙ</p>
+                <p>НУТ ЖАРЕНЫЙ</p>
+                <p>ФИСТАШКИ</p>
+                <p>СУДЖУК</p>
+                <p>ПИВНОЙ НАБОР</p>
+            </div>
+            <div style="color: #fff;">
+                <p>750&#8381</p>
+                <p>850&#8381</p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
